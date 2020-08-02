@@ -65,4 +65,34 @@ function max_array($arr){
 	 return $max_number;
  }
  echo max_array (array(20, 5, 8, 2));
+ echo "\n";
+/* 5.次のビルトイン関数の用途、使い方を調べて実際に使ってみてください。
+strip_tags
+array_push
+array_merge
+time, mktime
+date*/
+$text = '<h1><a hrel="https://tech-boost.jp/common/books/322?course=1">php4</a>関数を理解しよう</h1>';
+echo strip_tags($text);
+echo "\n";
+
+$array = [100, 200, 300];
+array_push($array, 400, 500);
+print_r($array);
+echo "\n";
+
+$abc = ["a", "b", "c", "d"];
+$add_abc =["d", "e", "f", "g"];
+$result = array_merge($abc,$add_abc);
+print_r($result);
+echo "\n";
+
+echo time();
+echo "\n";
+$time = mktime();
+  print_r(date('Y年m月d日h時i分s秒'));
+echo "\n";
+
+echo date('本日はY年m月j日です。');
+
  ?>
