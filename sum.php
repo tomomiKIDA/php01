@@ -25,10 +25,10 @@ print_r($array);
 
 1.引数に数値を指定して実行すると、
 数値を2倍にして返す関数を作成してください*/
-$num = 5;
-$result1 = $num * 2;
-echo $result1;
-echo "\n";
+function nibai($num){
+	return $num*2;
+}
+echo nibai(5) . "\n";
 
 /*2.$a と $b を仮引数に持ち、　$a と $b
 を足した結果を返す関数を作成してください。*/
@@ -59,10 +59,10 @@ function max_array($arr){
  $max_number = $arr[0];
  foreach($arr as $a){
 	if ($max_number < $a){
-		$max_number == $a;
+		$max_number = $a;
 	}
 	} 
-	 return $max_number;
+	return $max_number;
  }
  echo max_array (array(20, 5, 8, 2));
  echo "\n";
